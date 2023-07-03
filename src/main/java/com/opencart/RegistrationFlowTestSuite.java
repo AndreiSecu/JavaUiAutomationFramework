@@ -27,7 +27,7 @@ public class RegistrationFlowTestSuite {
     @Test
     @DisplayName("The url contains success keyword after registration with valid data")
     public void registerFlowRedirectsTheUserToTheCorrectUrl() throws InterruptedException {
-        homePage.navigateToRegisterPageFromHeaderMenu();
+//        homePage.navigateToRegisterPageFromHeaderMenu();
 
         String firstName = DataFakerManager.getRandomName();
         String lastName = DataFakerManager.getRandomName();
@@ -35,8 +35,8 @@ public class RegistrationFlowTestSuite {
         String password = DataFakerManager.getRandomPassword(21, 22);
 
         registerPage.fillInTheRegisterForm(firstName, lastName, randomEmail, password);
-        registerPage.switchOnThePrivacyToggle(driver);
-        registerPage.clickOnContinueButton();
+//        registerPage.switchOnThePrivacyToggle(driver);
+//        registerPage.clickOnContinueButton();
 
         Thread.sleep(1000);
         System.out.println(driver.getCurrentUrl());
@@ -50,7 +50,7 @@ public class RegistrationFlowTestSuite {
     @DisplayName("The Url contains register keyword when privacy policy is not accepted")
     public void registerFlowIsBlockedByPrivacyPolicyToggleThatIsNotAccepted() throws InterruptedException {
 
-        homePage.navigateToRegisterPageFromHeaderMenu();
+//        homePage.navigateToRegisterPageFromHeaderMenu();
 
         String firstName = DataFakerManager.getRandomName();
         String lastName = DataFakerManager.getRandomName();
@@ -61,7 +61,7 @@ public class RegistrationFlowTestSuite {
 //        Do not enable the Privacy Toggle
 //        registerPage.switchOnThePrivacyToggle(driver);
 
-        registerPage.clickOnContinueButton();
+//        registerPage.clickOnContinueButton();
 
         Thread.sleep(500);
         System.out.println(driver.getCurrentUrl());

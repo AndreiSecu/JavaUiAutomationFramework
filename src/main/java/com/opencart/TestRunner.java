@@ -13,7 +13,7 @@ public class TestRunner {
         driver.get("https://andreisecuqa.host/");
 
         HomePage homePage = new HomePage(driver);
-        homePage.navigateToRegisterPageFromHeaderMenu();
+//        homePage.navigateToRegisterPageFromHeaderMenu();
 
         String firstName = DataFakerManager.getRandomName();
         String lastName = DataFakerManager.getRandomName();
@@ -22,8 +22,8 @@ public class TestRunner {
 
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.fillInTheRegisterForm(firstName, lastName, randomEmail, password);
-        registerPage.switchOnThePrivacyToggle(driver);
-        registerPage.clickOnContinueButton();
+//        registerPage.switchOnThePrivacyToggle(driver);
+//        registerPage.clickOnContinueButton();
         Thread.sleep(1000);
         System.out.println(driver.getCurrentUrl());
 

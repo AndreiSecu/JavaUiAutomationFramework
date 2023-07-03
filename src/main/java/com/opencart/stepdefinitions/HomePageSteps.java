@@ -15,8 +15,4 @@ public class HomePageSteps {
         driver.get("https://andreisecuqa.host/");
     }
 
-    @And("RegisterPage is accessed from HomePage menu")
-    public void registerPageIsAccessedFromHomePageMenu() {
-        homePage.navigateToRegisterPageFromHeaderMenu();
-    }
 }
