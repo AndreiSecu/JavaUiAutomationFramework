@@ -43,16 +43,5 @@ public class RegisterPage extends Page {
         System.out.println("The entered password is: " + password);
     }
 
-    public void switchOnThePrivacyToggle(WebDriver driver) throws InterruptedException {
-        ScrollManager.scrollToElement(driver, privacyToggle);
-        privacyToggle.click();
-    }
-
-    public void clickOnContinueButton() throws InterruptedException {
-        ScrollManager.scrollToElement(DriverManager.getInstance().getDriver(), continueButton);
-        continueButton.click();
-    }
-
-
 }
 

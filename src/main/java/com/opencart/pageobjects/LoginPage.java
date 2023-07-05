@@ -18,16 +18,4 @@ public class LoginPage extends Page {
 
     @FindBy(css = "button[type='submit']")
     private WebElement loginButton;
-
-    public void fillInTheLoginForm(String email, String password) {
-        emailInput.sendKeys(email);
-        System.out.println("Entered email:" + email);
-        passwordInput.sendKeys(password);
-        System.out.println("Entered password:" + password);
-    }
-
-    public void clickOnLoginBtn() {
-        loginButton.click();
-        System.out.println("The login button was clicked");
-    }
 }
